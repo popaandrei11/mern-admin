@@ -1,5 +1,5 @@
 stages:
-  - stage: 'install package-lock'
+  - stage: 'install lock'
     jobs:
     - job: install
       steps:
@@ -8,7 +8,7 @@ stages:
          workingDirectory: '$(System.DefaultWorkingDirectory)'
          npm install
          displayName: 'npm install'
-  - stage: 'changedir and install package-lock'
+  - stage: 'changedir and install lock'
     jobs:
     - job: changedir
       steps:
